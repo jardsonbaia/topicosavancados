@@ -160,7 +160,7 @@
                }],
             "UserData": {"Fn::Base64": { "Fn::Join": ["", [
             "#!/bin/bash -ex \n",
-            "curl -s https://raw.githubusercontent.com/Iasmynmagalhaes/topicos/master/banco.sh | bash -ex\n"
+            "curl -s https://raw.githubusercontent.com/jardsonbaia/topicosavancados/master/bancodados.sh | bash -ex\n"
             ]]}}
          }
       },
@@ -180,7 +180,7 @@
             "UserData": {"Fn::Base64": { "Fn::Join": ["", [
                "#!/bin/bash -ex \n",
                "export IP_PRIVATE_BD=", {"Fn::GetAtt": ["ServidorBancodeDados", "PrivateIp"]}, "\n",
-               "curl -s https://raw.githubusercontent.com/Iasmynmagalhaes/topicos/master/web.sh | bash -ex\n"
+               "curl -s https://raw.githubusercontent.com/jardsonbaia/topicosavancados/master/servidorweb.sh | bash -ex\n"
             ]]}}
          }
       },
